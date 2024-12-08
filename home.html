@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-green-700 bg-opacity-80 p-4 fixed top-0 w-full flex justify-between items-center">
+    <a href="#" class="text-white text-lg font-bold">E-Library</a>
+    <div>
+      <a href="login.html" class="text-white px-4">Login</a>
+      <a href="signup.html" class="text-white px-4">Sign Up</a>
+      <a href="help" class="text-white px-4">Help</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('lib.png');">
+    <div class="absolute inset-0 bg-green-900 bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
+      <h1 class="text-4xl font-bold mb-4">Welcome to E-Library</h1>
+      <p class="text-lg mb-6">Your gateway to knowledge. Discover thousands of books at your fingertips!</p>
+      <a href="login.html" class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all">
+        Explore Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-12 bg-gray-100 text-gray-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold text-green-700 mb-6">Why Choose Our E-Library?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <div class="text-green-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10 2a6 6 0 016 6v1a5 5 0 015 5v2H4v-2a5 5 0 015-5V8a6 6 0 016-6z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Vast Collection</h3>
+          <p class="text-sm text-gray-600">Access thousands of books across various genres and categories.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <div class="text-green-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H4zm2 14V4h10v12H6z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Easy Access</h3>
+          <p class="text-sm text-gray-600">Browse and read anytime, anywhere, on any device.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <div class="text-green-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M11 6.879V4a1 1 0 10-2 0v2.879l-.293-.293a1 1 0 00-1.414 0l-.707.707a1 1 0 000 1.414l.293.293H4a1 1 0 100 2h2.879l-.293.293a1 1 0 000 1.414l.707.707a1 1 0 001.414 0l.293-.293V16a1 1 0 102 0v-2.879l.293.293a1 1 0 001.414 0l.707-.707a1 1 0 000-1.414l-.293-.293H16a1 1 0 000-2h-2.879l.293-.293a1 1 0 000-1.414l-.707-.707a1 1 0 00-1.414 0l-.293.293z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">User-Friendly</h3>
+          <p class="text-sm text-gray-600">Simple and intuitive interface designed for all users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-4 text-center">
+    <p>&copy; Jordan Damayan</p>
+    <div class="mt-2">
+      <a href="help.html" class="text-white px-2 hover:underline">Help</a>
+    </div>
+  </footer>
+</body>
+</html>

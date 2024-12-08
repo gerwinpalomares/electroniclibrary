@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-green-700 bg-opacity-80 p-4 fixed top-0 w-full flex justify-between items-center">
+    <a href="#" class="text-white text-lg font-bold">E-Library</a>
+    <div>
+      <a href="login.html" class="text-white px-4">Login</a>
+      <a href="signup.html" class="text-white px-4">Sign Up</a>
+      <a href="help.html" class="text-white px-4">Help</a>
+    </div>
+  </nav>
+
+  <!-- Help Section -->
+  <section class="pt-20 pb-12">
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+      <!-- Help Header -->
+      <div class="bg-green-200 text-center p-6">
+        <h1 class="text-2xl font-bold text-green-900">Need Help?</h1>
+        <p class="text-gray-700 mt-2">We’re here to assist you. Let us know your concerns or explore our FAQs below.</p>
+      </div>
+
+      <!-- Help Form -->
+      <div class="p-6 space-y-6">
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-gray-700 font-bold mb-2">Your Name:</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your name">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 font-bold mb-2">Your Email:</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your email">
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 font-bold mb-2">Your Message:</label>
+            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Type your message or issue here..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- FAQs -->
+      <div class="bg-gray-50 p-6 mt-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold text-green-900 mb-4">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <details class="bg-white p-4 rounded-lg shadow">
+            <summary class="font-semibold text-green-700 cursor-pointer">How can I reset my password?</summary>
+            <p class="mt-2 text-gray-700">Go to the login page and click "Forgot Password" to receive an email with reset instructions.</p>
+          </details>
+          <details class="bg-white p-4 rounded-lg shadow">
+            <summary class="font-semibold text-green-700 cursor-pointer">How do I explore the library?</summary>
+            <p class="mt-2 text-gray-700">Navigate to the Library page from the dashboard to browse available resources.</p>
+          </details>
+          <details class="bg-white p-4 rounded-lg shadow">
+            <summary class="font-semibold text-green-700 cursor-pointer">Who do I contact for further issues?</summary>
+            <p class="mt-2 text-gray-700">You can fill out the form above, or email us at support@elibrary.com.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-4 text-center">
+    <p>&copy; Jordan Damayan</p>
+    <div class="mt-2">
+      <a href="#" class="text-white px-2 hover:underline">Back to Top</a>
+    </div>
+  </footer>
+</body>
+</html>
